@@ -10,18 +10,7 @@ function Button({
     outline, 
     rounded
  }) {
-
-   Button.propTypes = {
-    primary: PropTypes.bool,
-    secondary: PropTypes.bool,
-    success: PropTypes.bool,
-    warning: PropTypes.bool,
-    danger: PropTypes.bool,
-    outline: PropTypes.bool,
-    rounded: PropTypes.bool
-   } 
- 
-    return <button>{children}</button>
+    return <button className="px-3 py-1.5 m-1 border border-blue-500 bg-blue-600 text-white">{children}</button> 
 }
 
 Button.propTypes = {
