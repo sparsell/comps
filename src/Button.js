@@ -11,7 +11,7 @@ function Button({
     rounded
  }) {
 
-    const classes = className('px-3', 'py-1.5', 'border', {
+    const classes = className('flex', 'items-center','px-3', 'py-1.5', 'border', {
         'border-green-500 bg-green-500 text-white': primary,
         'border-blue-400 bg-blue-400 text-white': secondary,
         'border-gray-900 bg-gray-900 text-white': success,
