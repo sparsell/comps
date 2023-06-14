@@ -1,19 +1,32 @@
 import Button from './Button'
+import { GoCloudDownload, GoDatabase } from 'react-icons/go';
+import { BsCurrencyDollar } from 'react-icons/bs';
 
 function App() {
     return (
     <div>
         <div>
-            <Button primary rounded outline>Click</Button>
+            <Button primary rounded>
+                <BsCurrencyDollar />
+                    I spent less
+            </Button>
         </div>
         <div>
-            <Button secondary outline>Secondary</Button>
+            <Button secondary outline>
+                    Secondary
+                </Button>
         </div>
         <div>
-            <Button warning outline>Warning</Button>
+            <Button warning outline>
+                <GoCloudDownload />
+                    Warning
+                </Button>
         </div>
         <div>
-            <Button danger rounded>Danger</Button>
+            <Button danger rounded>
+                <GoDatabase />
+                    Danger
+            </Button>
         </div>
         <div>
             <Button success>Success!</Button>
