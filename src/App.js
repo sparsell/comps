@@ -3,16 +3,24 @@ import { GoCloudDownload, GoDatabase } from 'react-icons/go';
 import { BsCurrencyDollar } from 'react-icons/bs';
 
 function App() {
+
+    const handleClick = () => {
+        console.log("handle click");
+    }
+
+    const handleMouseOver = () => {
+        console.log('mouseover');
+    }
     return (
     <div>
         <div>
-            <Button primary rounded>
+            <Button onClick={handleClick} primary rounded>
                 <BsCurrencyDollar />
                     I spent less
             </Button>
         </div>
         <div>
-            <Button secondary outline>
+            <Button onMouseOver={handleMouseOver} secondary outline>
                     Secondary
                 </Button>
         </div>
