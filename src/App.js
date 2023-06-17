@@ -14,7 +14,7 @@ function App() {
     return (
     <div>
         <div>
-            <Button onClick={handleClick} primary rounded>
+            <Button primary rounded className='mb-5' onClick={handleClick}>
                 <BsCurrencyDollar />
                     I spent less
             </Button>
