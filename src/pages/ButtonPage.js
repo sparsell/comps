@@ -1,8 +1,8 @@
-import Button from './components/Button'
+import Button from '../components/Button'
 import { GoCloudDownload, GoDatabase } from 'react-icons/go';
 import { BsCurrencyDollar } from 'react-icons/bs';
 
-function App() {
+function ButtonPage() {
 
     const handleClick = () => {
         console.log("handle click");
@@ -14,20 +14,13 @@ function App() {
     return (
     <div>
         <div>
-            <Button 
-            primary 
-            rounded 
-            className='mb-5' 
-            onClick={handleClick}>
+            <Button primary rounded className='mb-5' onClick={handleClick}>
                 <BsCurrencyDollar />
                     I spent less
             </Button>
         </div>
         <div>
-            <Button 
-            onMouseOver={handleMouseOver} 
-            secondary 
-            outline>
+            <Button onMouseOver={handleMouseOver} secondary outline>
                     Secondary
                 </Button>
         </div>
@@ -50,4 +43,4 @@ function App() {
     );
 }
 
-export default App;
+export default ButtonPage;
