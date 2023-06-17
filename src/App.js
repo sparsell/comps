@@ -1,4 +1,4 @@
-import Button from './Button'
+import Button from './components/Button'
 import { GoCloudDownload, GoDatabase } from 'react-icons/go';
 import { BsCurrencyDollar } from 'react-icons/bs';
 
