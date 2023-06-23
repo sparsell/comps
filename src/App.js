@@ -1,53 +1,32 @@
-import Button from './components/Button'
+import Button from './components/Button';
+import Accordion from './components/Accordion';
 import { GoCloudDownload, GoDatabase } from 'react-icons/go';
 import { BsCurrencyDollar } from 'react-icons/bs';
 
 function App() {
 
-    const handleClick = () => {
-        console.log("handle click");
-    }
+    const items = [
+        {
+            id: "0",
+            label: "Can I use React in a project", 
+            content: "Yes, you can"
+        },
+        {
+            id: "1",
+            label: "Can I use Tailwind in a project", 
+            content: "Yes, you can"
+        },
+        {
+            id: "2",
+            label: "Can I use Javascript in a project", 
+            content: "Yes, you can"
+        }
+    ];
 
-    const handleMouseOver = () => {
-        console.log('mouseover');
-    }
     return (
-    <div>
-        <div>
-            <Button 
-            primary 
-            rounded 
-            className='mb-5' 
-            onClick={handleClick}>
-                <BsCurrencyDollar />
-                    I spent less
-            </Button>
-        </div>
-        <div>
-            <Button 
-            onMouseOver={handleMouseOver} 
-            secondary 
-            outline>
-                    Secondary
-                </Button>
-        </div>
-        <div>
-            <Button warning outline>
-                <GoCloudDownload />
-                    Warning
-                </Button>
-        </div>
-        <div>
-            <Button danger rounded>
-                <GoDatabase />
-                    Danger
-            </Button>
-        </div>
-        <div>
-            <Button success>Success!</Button>
-        </div>
-    </div>
-    );
+        <Accordion items={items}/>
+    )
+    
 }
 
 export default App;
